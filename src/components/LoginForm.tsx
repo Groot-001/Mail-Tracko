@@ -57,7 +57,7 @@ import { useAuthStore } from "../store/authStore";
 //         {isPending ? "Logging in..." : "Login"}
 //       </button>
 //     </form>
-//   );
+//   )
 // }
 
 export default function LoginForm() {
