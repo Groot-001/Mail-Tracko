@@ -1,0 +1,167 @@
+---
+name: OutreachPro Light
+colors:
+  surface: "#f9f9f9"
+  surface-dim: "#dadada"
+  surface-bright: "#f9f9f9"
+  surface-container-lowest: "#ffffff"
+  surface-container-low: "#f4f3f3"
+  surface-container: "#eeeeee"
+  surface-container-high: "#e8e8e8"
+  surface-container-highest: "#e2e2e2"
+
+  on-surface: "#1a1c1c"
+  on-surface-variant: "#4c4736"
+
+  inverse-surface: "#2f3131"
+  inverse-on-surface: "#f1f1f1"
+  outline: "#7d7764"
+  outline-variant: "#cec6b0"
+  surface-tint: "#6e5e00"
+
+  primary: "#8F740D"
+  on-primary: "#ffffff"
+  primary-container: "#f1d442"
+  on-primary-container: "#6a5b00"
+  inverse-primary: "#e2c635"
+
+  secondary: "#6b5e28"
+  on-secondary: "#ffffff"
+  secondary-container: "#f2df9c"
+  on-secondary-container: "#6f622c"
+
+  tertiary: "#51719B"
+  on-tertiary: "#ffffff"
+  tertiary-container: "#a3ddf0"
+  on-tertiary-container: "#266373"
+
+  error: "#ba1a1a"
+  on-error: "#ffffff"
+  error-container: "#ffdad6"
+  on-error-container: "#93000a"
+
+  primary-fixed: "#ffe257"
+  primary-fixed-dim: "#e2c635"
+  on-primary-fixed: "#211b00"
+  on-primary-fixed-variant: "#534600"
+
+  secondary-fixed: "#f5e29f"
+  secondary-fixed-dim: "#d7c685"
+  on-secondary-fixed: "#221b00"
+  on-secondary-fixed-variant: "#524612"
+
+  tertiary-fixed: "#b2ebfe"
+  tertiary-fixed-dim: "#96cfe2"
+  on-tertiary-fixed: "#001f27"
+  on-tertiary-fixed-variant: "#044e5d"
+  
+  background: "#f9f9f9"
+  on-background: "#1a1c1c"
+  surface-variant: "#e2e2e2"
+typography:
+  display-lg:
+    fontFamily: Inter
+    fontSize: 36px
+    fontWeight: "700"
+    lineHeight: 44px
+    letterSpacing: -0.02em
+  display-lg-mobile:
+    fontFamily: Inter
+    fontSize: 28px
+    fontWeight: "700"
+    lineHeight: 34px
+    letterSpacing: -0.02em
+  headline-md:
+    fontFamily: Inter
+    fontSize: 24px
+    fontWeight: "600"
+    lineHeight: 32px
+    letterSpacing: -0.01em
+  title-sm:
+    fontFamily: Inter
+    fontSize: 18px
+    fontWeight: "600"
+    lineHeight: 28px
+  body-md:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: "400"
+    lineHeight: 24px
+  body-sm:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: "400"
+    lineHeight: 20px
+  table-data:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: "500"
+    lineHeight: 20px
+  label-caps:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: "600"
+    lineHeight: 16px
+    letterSpacing: 0.05em
+rounded:
+  sm: 0.125rem
+  DEFAULT: 0.25rem
+  md: 0.375rem
+  lg: 0.5rem
+  xl: 0.75rem
+  full: 9999px
+spacing:
+  stack-sm: 8px
+  stack-md: 16px
+  stack-lg: 32px
+  gutter: 24px
+  sidebar-width: 280px
+  container-max: 1440px
+  margin-mobile: 16px
+---
+# ## Brand & Style
+# The brand personality is **authoritative, professional, and high-performance**. It targets enterprise-level power users who require high information density without sacrificing visual clarity.
+
+# The design style is **Corporate Modern with a Dark Fidelity twist**. It utilizes a sophisticated "Muted Gold" primary palette against a clean, neutral foundation to create a premium, "Executive Suite" feel. The interface relies on a structured hierarchy, subtle tonal layering, and precise interactive states to convey reliability and enterprise-grade power.
+
+# ## Colors
+# The color system follows a **Fidelity Light** model, transitioning from a warm-grey base to a more neutral, high-clarity foundation.
+# - **Backgrounds:** The system uses a clean, neutral palette derived from a light-grey seed (`#ededed`). This provides a more balanced and modern feel that remains crisp and professional.
+# - **Primary:** A refined, brighter Gold (`#edd03f`) is used for calls to action, active navigation states, and critical branding elements.
+# - **Secondary:** A professional, deeper olive-toned Tan (`#9b8c51`) provides a grounded secondary layer for supporting UI elements, offering better contrast and a more serious tone.
+# - **Semantic Accents:** Tertiary Soft Blue (`#7db6c8`) is reserved for security and secondary features (like 2FA), ensuring informational clarity without visual noise.
+# - **Contrast:** High legibility is maintained through calibrated `on-surface` and `on-surface-variant` tokens that ensure text remains crisp against the neutral surfaces.
+
+# ## Typography
+# The system uses **Inter** exclusively to emphasize its functional, SaaS-oriented nature.
+# - **Hierarchy:** Tight letter-spacing on headlines creates a compact, premium feel.
+# - **Utility:** `label-caps` is used for overlines and section categorization to provide clear structure without visual weight.
+# - **Emphasis:** Bold weights are used for the "Enterprise Tier" branding and primary navigation items, while Medium (500) is used for interactive labels to differentiate them from standard body text.
+
+# ## Layout & Spacing
+# The layout follows a **Fixed Sidebar + Fluid Content** model.
+# - **Sidebar:** A constant 280px left-hand navigation allows for deep information architecture and branding.
+# - **Canvas:** The main content is capped at 1440px for readability, centered with large gutters (24px).
+# - **Vertical Rhythm:** Sections are separated by `stack-lg` (32px), while internal card elements use `stack-md` (16px) or `stack-sm` (8px) for tight logical grouping.
+# - **Responsive:** On mobile, the sidebar transitions to a hidden/drawer state, and horizontal margins shrink to 16px.
+
+# ## Elevation & Depth
+# Depth is created through **Tonal Layering** rather than traditional shadows, utilizing refined neutral-grey tones.
+# - **Base Level:** `background` serves as the floor.
+# - **Navigation/Cards:** Surfaces use `surface-container-lowest` to feel recessed or `surface-container` to feel elevated.
+# - **Interactive Depth:** Hover states utilize `surface-container-highest` or subtle `outline-variant` borders to indicate interactivity.
+# - **Top AppBar:** Uses a `backdrop-blur` (80% opacity) to provide a sense of transparency and place when scrolling content underneath.
+
+# ## Shapes
+# The shape language is **Soft (0.25rem - 0.75rem)**.
+# - **Small Components:** Inputs and buttons use a default `0.5rem` (rounded-lg) for a modern, approachable feel.
+# - **Containers:** Large cards and section blocks use `0.75rem` (rounded-xl).
+# - **Special Elements:** Search bars and "Inbox Count" badges use full-pill rounding (9999px) to distinguish them as utility or notification elements.
+# - **Iconography:** Square icons use 8px rounding to match the button geometry.
+
+# ## Components
+# - **Buttons:** Primary buttons are high-contrast Gold with dark text. Secondary buttons utilize the muted Tan palette or are outlined with `outline-variant`.
+# - **Inputs:** Use `surface-container-low` with a 50% opacity border. Focus states trigger a 2px `primary` ring.
+# - **Side Nav:** Active items use a container-fill (`primary-container`) with bold text. Inactive items use `on-surface-variant` with a 150ms transition to primary gold on hover.
+# - **Cards:** Defined by a 1px border (`outline-variant/30`) and a transition effect that brightens the border color when hovered.
+# - **Toggles:** Use a standard pill track. The "On" state uses the `primary` color for the track, while the thumb remains white for maximum contrast.
