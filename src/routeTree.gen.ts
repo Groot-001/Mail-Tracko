@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as TypotestRouteImport } from './routes/typotest'
 import { Route as LoginRouteImport } from './routes/login'
+import { Route as SuccessfulLoginRouteImport } from './routes/SuccessfulLogin'
 
 const TypotestRoute = TypotestRouteImport.update({
   id: '/typotest',
@@ -22,29 +23,38 @@ const LoginRoute = LoginRouteImport.update({
   path: '/login',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SuccessfulLoginRoute = SuccessfulLoginRouteImport.update({
+  id: '/SuccessfulLogin',
+  path: '/SuccessfulLogin',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
+  '/SuccessfulLogin': typeof SuccessfulLoginRoute
   '/login': typeof LoginRoute
   '/typotest': typeof TypotestRoute
 }
 export interface FileRoutesByTo {
+  '/SuccessfulLogin': typeof SuccessfulLoginRoute
   '/login': typeof LoginRoute
   '/typotest': typeof TypotestRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
+  '/SuccessfulLogin': typeof SuccessfulLoginRoute
   '/login': typeof LoginRoute
   '/typotest': typeof TypotestRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/login' | '/typotest'
+  fullPaths: '/SuccessfulLogin' | '/login' | '/typotest'
   fileRoutesByTo: FileRoutesByTo
-  to: '/login' | '/typotest'
-  id: '__root__' | '/login' | '/typotest'
+  to: '/SuccessfulLogin' | '/login' | '/typotest'
+  id: '__root__' | '/SuccessfulLogin' | '/login' | '/typotest'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
+  SuccessfulLoginRoute: typeof SuccessfulLoginRoute
   LoginRoute: typeof LoginRoute
   TypotestRoute: typeof TypotestRoute
 }
@@ -65,10 +75,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LoginRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/SuccessfulLogin': {
+      id: '/SuccessfulLogin'
+      path: '/SuccessfulLogin'
+      fullPath: '/SuccessfulLogin'
+      preLoaderRoute: typeof SuccessfulLoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
+  SuccessfulLoginRoute: SuccessfulLoginRoute,
   LoginRoute: LoginRoute,
   TypotestRoute: TypotestRoute,
 }

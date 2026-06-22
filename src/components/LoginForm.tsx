@@ -22,12 +22,14 @@ export default function LoginForm() {
   return (
     <>
       {/* Main container */}
-      <div className="w-full">
+      <div className="w-full relative min-h-screen overflow-hidden">
         {/* top-left design */}
-        {/* <div className=" top-0 left-0  rounded-xl bg-surface-blur w-96 h-96"></div> */}
+        <div className="absolute -top-20 -left-32  rounded-xl  w-96 h-96  bg-[#E5C52B33] blur-[120px]"></div>
+        <div className="absolute -bottom-1.5 left-2/5 rounded-xl w-80 h-80 bg-[#D7C6851A] blur-[100px]"></div>
+        <div className="absolute bottom-10 -right-28 rounded-xl w-125 h-125 bg-[#A8C9F726] blur-[150px]"></div>
 
         {/* Content Container */}
-        <div className="flex flex-col gap-stack-lg max-w-110 mx-auto">
+        <div className="flex flex-col gap-stack-lg max-w-130 mx-auto py-17.5">
           {/* form Title */}
           <div className="flex flex-col pb-stack-sm mx-auto">
             <img src={mailicon} alt="mailicon" className="w-16 mx-auto" />
@@ -41,7 +43,7 @@ export default function LoginForm() {
 
           {/* form container */}
           <div className="relative">
-            <div className="w-109.5 h-1 bg-[#544600] absolute left-0"></div>
+            <div className="w-full h-1 bg-[#544600] absolute left-0 rounded-tr-lg rounded-tl-lg"></div>
             <div className="w-full rounded-lg border border-[#CDC6B24D] shadow-[0px_8px_30px_0px_#0000000A] p-8 bg-[#FFFFFF] flex flex-col gap-4">
               {/* Welcome div */}
               <div className="flex flex-col gap-1">
@@ -127,11 +129,11 @@ export default function LoginForm() {
 
               {/* Form outside container */}
               <div className=" w-full py-stack-sm flex items-center ">
-                <div className="w-[106.61px] h-px border border-t-[#CDC6B24D]"></div>
-                <span className="px-3.5 text-[#CDC6B2] text-label-caps">
+                <div className="w-full h-px border border-t-[#CDC6B24D]"></div>
+                <span className="w-full px-3.5 text-[#CDC6B2] text-label-caps">
                   OR CONTINUE WITH
                 </span>
-                <div className="w-[106.63px] h-px border border-t-[#CDC6B24D]"></div>
+                <div className="w-full h-px border border-t-[#CDC6B24D]"></div>
               </div>
               <div className="flex gap-stack-sm">
                 <div className="rounded-DEFAULT border border-[#CDC6B280] bg-surface-container-lowest flex gap-3 py-2.5 pr-[54.03px] pl-[54.02px]">
