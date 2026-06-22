@@ -112,4 +112,7 @@
   --spacing-sidebar-width: 280px;
   --spacing-container-max: 1440px;
   --spacing-margin-mobile: 16px;
+
+  /* shadow */
+  --shadow-button: 0px 2px 4px -2px #0000001a, 0px 4px 6px -1px #0000001a;
 }
